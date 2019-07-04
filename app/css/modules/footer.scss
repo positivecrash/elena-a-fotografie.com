@@ -1,0 +1,21 @@
+footer[role='contentinfo']
+	{
+		border-width: 1px 0 0;
+		border-style: solid;
+
+		padding: $margin-sec/2 0;
+		margin-top: $margin-sec;
+
+		p { margin-bottom: 0; }
+
+		.nav-g
+			{
+				margin-bottom: $margin-sec/2;
+				
+				a{
+					margin-left: 10px;
+					font-size: 22px;
+					&:first-child { margin-left: 0; }
+				}
+			}
+	}

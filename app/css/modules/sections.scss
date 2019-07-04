@@ -1,0 +1,17 @@
+@mixin sectionMargins($margin){
+  // margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+section
+  {
+    position: relative;
+    @include sectionMargins($margin-sec);
+
+    section{
+      @include sectionMargins($margin-sec/2);
+    }
+
+    // &:first-child { margin-top: 0 }
+    &:last-child { margin-bottom: 0 }
+  }

@@ -1,0 +1,99 @@
+header[role='banner']
+	{
+		padding: $margin-sec 0;
+		// font-size: 18px;
+
+		.dropdown-content
+			{
+				padding: 10px;
+			}
+
+		nav a.active { opacity: .7; }
+	}
+
+.header-top
+	{
+		// display: table;
+		// table-layout: fixed;
+		// width: 100%;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+.header-top--col
+	{
+		// display: table-cell;
+		// vertical-align: bottom;
+		// padding: 0 $padding-fields;
+
+		// position: relative;
+		// top: 14px;
+
+		// &:first-child
+		// 	{
+		// 		top: 0;
+		// 	}
+
+		// &:first-child { padding-left: 0 }
+		// &:last-child { padding-right: 0 }
+	}
+
+
+#header-logo
+	{
+		display: inline-block;
+		max-width: 150px;
+
+		img { @extend %i-block; }
+	}
+
+
+.nav-g
+	{
+		@extend %text_uppercase;
+
+		& > *
+			{
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 40px;
+
+				&:first-child{ margin-left: 0; }
+			}
+	}
+
+
+.nav-v
+	{
+		@extend %text_uppercase;
+
+		& > *
+			{
+				display: block;
+				margin-top: 10px;
+
+				&:first-child{ margin-top: 0; }
+			}
+	}
+
+
+.header-categories
+	{
+		font-size: 13px;
+		margin-top: $margin-sec/2;
+
+		white-space: nowrap;
+		overflow-x: scroll;
+		overflow-y: hidden;
+
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar { display: none; }
+
+		padding: 6px 0;
+		border-width: 1px 0;
+		border-style: solid;
+
+	}

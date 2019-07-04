@@ -1,0 +1,72 @@
+extends extends/layout.pug
+
+block html
+	- var meta_title = 'Homepage'
+	- var header = true
+	- var footer = true
+	- var bodyclass = 'theme-light'
+
+block content
+	.container-basic
+		section
+			#intro
+				h1
+					| Elena Anisimova fotografie 
+					span.t-light / Linz, Austria
+				p Hi, I'm Elena Anisimova. I'm a photographer and I have found myself loving photography for many years. There is an even greater love when it comes to capturing memories for other people. Find out more 
+					a(href="#") about me 
+					| or fill free to surf.
+
+			.row
+				.col-md-4
+					blockquote(style="height:250px")
+						h2 Gift certificate
+						// h2 Gift certificate
+						p.t-color-mid A photosession can be a wonderful gift for a loved one, a married couple, and even for children (if they like to wriggle and attract attention, undoubtedly).
+						a(href="#") Request a certificate
+
+				.col-md-4
+					blockquote(style="height:250px")
+						h2 Special offer
+						// h2 Special offer
+						p.t-color-mid Poppy fields are incredibly scenic places. Have time to get photos on the background of this miracle of nature.
+						p.t-uppercase: b Spring photosession 30 Min. + 5 bearbeitete Fotos = 100€
+
+				.col-md-4
+					blockquote(style="height:250px")
+						p.t-uppercase.t-color-mid How to prepare
+						p.t-color-mid For many photoshoot - exciting event. But do not worry, I will tell you how to prepare for photography
+						a(href="#") Read tutorial
+
+		.grid.stories
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-1.jpg")
+				span Ivan Kupala Party
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-2.jpg")
+				span Meine musikalische Perle
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-3.jpg")
+				span Zoya Zavyalova
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-4.jpg")
+				span Frühling ist immer in unseren Herzen
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-5.jpg")
+				span Pianist
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-10.jpg")
+				span  Der Frühling mit Elena Schwarz
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-6.jpg")
+				span Ein Porträt für den kleinen, begabten Pianist 
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-7.jpg")
+				span Ninas Erstkommunion
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-8.jpg")
+				span Blumen-Feen
+			a.grid-item(href="#")
+				img.i-block(alt="", src="assets/i/tmp/Story-9.jpg")
+				span  Zwei begabten Künstlerinnen
+			

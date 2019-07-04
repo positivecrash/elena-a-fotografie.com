@@ -1,0 +1,101 @@
+html, body { position: relative; }
+
+body
+  {
+    opacity: 0;
+    animation: 0.4s FadeIn ease-in forwards;
+  }
+
+
+
+/*====== Set width of container ======*/
+.container-basic { @include secw($mq-desktop); }
+.container-full {  width: 100%; box-sizing: border-box; }
+.container-padding { @include secw(100%); }
+/*====== end of Set width of container ======*/
+
+
+
+/*====== Flow elements ======*/
+
+.d-table
+  {
+    display: table;
+
+    & > *{
+      display: table-cell;
+    }
+  }
+
+.d-table--row { display: table-row; }
+.d-table--cell { display: table-cell; }
+
+.d-inlineblock { display: inline-block !important; }
+.d-block { display: block !important; }
+
+.align-vertical { display: inline-block; vertical-align: middle; }
+.align-top { display: inline-block; vertical-align: top; }
+
+/*====== Flow elements ======*/
+
+
+/*====== Bootstrap ======*/
+
+.row
+  {
+
+    @media screen and (max-width: $bootstrap-md){
+      *[class*='col-md']
+        {
+          margin-bottom: $vertical-rythm;
+        }
+    }
+
+    @media screen and (max-width: $bootstrap-lg){
+      *[class*='col-lg']
+        {
+          margin-bottom: $vertical-rythm;
+        }
+    }
+
+  }
+
+/*====== end of Bootstrap ======*/
+
+
+
+
+/*====== Navigation ======*/
+
+.dropdown
+  {
+    position: relative;
+
+    & > .dropdown-content
+      {
+        visibility: hidden;
+        opacity: 0;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        text-align: left;
+        padding-top: 10px;
+      }
+
+    &:hover
+      {
+        & > .dropdown-content { animation: 0.2s FadeIn 0.4s ease-out forwards; }
+      }
+
+
+    &.dropdown-color, &.dropdown-color .inside{
+      padding: 8px 15px;
+      background: darken($c-background, 5%);
+      border: 1px solid $c-violet;
+      border-radius: 4px;
+    }
+  }
+
+/*====== end of Navigation ======*/

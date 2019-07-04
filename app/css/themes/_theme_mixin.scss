@@ -1,0 +1,64 @@
+@mixin theme (
+
+  $theme-class:               '.theme-light',
+
+  $gray:                      #9D9D9C,
+  $gray-light:                #e1e1e1,
+  $blue:                      #22398E,
+
+  $body-background:           #ffffff,
+  $body-textcolor:            #575756,
+  $link-textcolor:            $blue
+
+){
+
+  #{$theme-class} //body class for theme
+  {
+    background-color: $body-background;
+    color: $body-textcolor;
+
+    a
+      {
+        color: $link-textcolor;
+      }
+
+
+    header[role='banner']
+      {
+        a { color: $body-textcolor; }
+
+        .dropdown-content
+          {
+            background-color: $body-textcolor;
+            &, a { color: $body-background; }
+          }
+
+        .header-categories
+          {
+            border-color: $gray-light;
+
+            a
+              {
+                color: $gray;
+
+                &.main { color: $body-textcolor; }
+              }
+            }
+      }
+
+    footer[role='contentinfo']
+      {
+        color: $gray;
+        border-color: $gray-light;
+      }
+
+
+    .grid-item { color: $gray; }
+    .stories .grid-item { border-color: $gray-light; }
+
+    blockquote { border-color: $gray-light }
+    .t-color-mid, a.t-color-mid { color: $gray; }
+
+  }
+
+}

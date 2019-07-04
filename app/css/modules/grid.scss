@@ -1,0 +1,39 @@
+#intro
+	{
+		// margin-bottom: $margin-sec;
+
+		p {
+			max-width: 700px;
+			font-size: $font-size-base + 2;
+		}
+	}
+
+
+.grid
+  {
+    column-count: 3;
+    column-gap: $margin-sec;
+  }
+
+
+.grid-item
+  {
+    display: inline-block;
+    margin: 0 0 $margin-sec;
+    width: 100%;
+
+    span
+      {
+        display: block;
+        @extend %text_uppercase;
+        margin-top: 5px;
+      }
+  }
+
+
+.stories .grid-item
+	{
+		padding: 10px;
+		border-style: solid;
+		border-width: 1px;
+	}
