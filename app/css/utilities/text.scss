@@ -6,10 +6,9 @@ body { @extend %font_base; }
 
 #{headings()}
 	{
-		@extend %text_uppercase;
 		line-height: 1.5;
   		margin-bottom: $vertical-rythm/2;
-  		// font-weight: 700;
+  		font-weight: 400;
 	}
 
 #{headings(1,2)}
@@ -155,8 +154,8 @@ table
 // @include margins(30);
 // @include margins(40);
 
-// .m-b-sec { margin-bottom: $margin-sec;  }
-// .m-t-sec { margin-top: $margin-sec;  }
+.m-b-sec--big { margin-bottom: $margin-sec*2;  }
+.m-t-sec--big { margin-top: $margin-sec*2;  }
 
 // .m-b-half { margin-bottom: $margin-sec/2; }
 // .m-t-half { margin-top: $margin-sec/2; }

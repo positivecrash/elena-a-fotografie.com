@@ -8,35 +8,37 @@ block html
 
 block content
 	.container-basic
-		section
-			#intro
-				h1
-					| Elena Anisimova fotografie 
-					span.t-light / Linz, Austria
-				p Hi, I'm Elena Anisimova. I'm a photographer and I have found myself loving photography for many years. There is an even greater love when it comes to capturing memories for other people. Find out more 
-					a(href="#") about me 
-					| or fill free to surf.
+		// section
+		// 	h1
+		// 		| Elena Anisimova fotografie 
+		// 		span.t-light / Linz, Austria
+		// 	#intro-content
+		// 		p Hi, I'm Elena Anisimova. I'm a photographer and I have found myself loving photography for many years. There is an even greater love when it comes to capturing memories for other people. Find out more 
+		// 			a(href="#") about me 
+		// 			| or fill free to surf.
 
-			.row
+		section.m-b-sec--big
+			.row.section-specials
 				.col-md-4
-					blockquote(style="height:250px")
-						h2 Gift certificate
-						// h2 Gift certificate
-						p.t-color-mid A photosession can be a wonderful gift for a loved one, a married couple, and even for children (if they like to wriggle and attract attention, undoubtedly).
-						a(href="#") Request a certificate
-
-				.col-md-4
-					blockquote(style="height:250px")
-						h2 Special offer
-						// h2 Special offer
-						p.t-color-mid Poppy fields are incredibly scenic places. Have time to get photos on the background of this miracle of nature.
-						p.t-uppercase: b Spring photosession 30 Min. + 5 bearbeitete Fotos = 100€
+					h2
+						a(href="#")
+							i.i-gift
+							span Bestellen Geschenkgutscheine
+					p A photosession can be a wonderful gift for a loved one, a married couple, and even for children (if they like to wriggle and attract attention, undoubtedly).
 
 				.col-md-4
-					blockquote(style="height:250px")
-						p.t-uppercase.t-color-mid How to prepare
-						p.t-color-mid For many photoshoot - exciting event. But do not worry, I will tell you how to prepare for photography
-						a(href="#") Read tutorial
+					h2
+						a(href="#")
+							i.i-special
+							span Siehe Sonderangebote
+					p Poppy fields are incredibly scenic places. Have time to get photos on the background of this miracle of nature. Get your spring photosession with a discount now.
+
+				.col-md-4
+					h2
+						a(href="#")
+							i.i-look
+							span Vorbereitung Ihres Fotoshootings
+					p For many photoshoot - exciting event. But do not worry, I will tell you how to prepare for photography
 
 		.grid.stories
 			a.grid-item(href="#")
