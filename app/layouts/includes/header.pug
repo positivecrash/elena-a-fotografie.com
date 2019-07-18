@@ -1,27 +1,29 @@
 header(role='banner')
-	.container-basic
-		.header-top
-			.header-top--col
-				a(href="#")#header-logo: img(alt="", src="assets/i/Anisimova-Logo-g.png")
+	.header-top
+		.container-padding
+			//- .header-top--col
+			//- 	a(href="#")#header-logo: img(alt="", src="assets/i/Anisimova-Logo-g.png")
 
 			.header-top--col
 				nav.nav-g
-					a(href="#").active Home
+					//- a(href="#").active Home
 					a(href="#") über Mich
 					a(href="#") Preise
+					a(href="#")#header-logo: img(alt="", src="assets/i/Anisimova-Logo-g.png")
 					a(href="#") Geschenkgutscheine
 					a(href="#") Kontakt
 			
-			.header-top--col.t-align--right.nav-g
+			.header-top--col.t-align--right.nav-g#header-lang
 				.dropdown
-					a(href="#") DH
+					a(href="#") DE
 					.dropdown-content.nav-v
 						a(href="#") RU
-						a(href="#").active DH
+						a(href="#").active DE
 
-		.header-categories
+	.header-categories
+		.container-padding
 			nav.nav-g
-				a(href="#") alle Fotos
+				a(href="#") Alle Fotos
 				a(href="#") Familienporträt
 				a(href="#") Kinder
 				a(href="#") Porträt

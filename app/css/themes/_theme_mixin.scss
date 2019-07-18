@@ -4,6 +4,7 @@
 
   $gray:                      #9D9D9C,
   $gray-light:                #e1e1e1,
+  $gray-lightest:                #f7f7f7,
   $blue:                      #22398E,
 
   $body-background:           #ffffff,
@@ -25,18 +26,20 @@
 
     header[role='banner']
       {
-        // a { color: $body-textcolor; }
-
         .dropdown-content
           {
             background-color: $body-textcolor;
             &, a { color: $body-background; }
           }
 
-          nav a.active:after{
-            background-color: $link-textcolor;
+          nav a.active{
+            color: $body-textcolor;
           }
       }
+
+    // .header-top { background-color: $gray-lightest; }
+    .header-top a { color: $body-textcolor; }
+    .header-categories { border-color: $gray-light; }
 
     footer[role='contentinfo']
       {
@@ -45,6 +48,11 @@
 
 
     .grid-item { color: $body-textcolor; }
+
+    .section-specials
+      {
+        .d-table--cell:last-child { border-color: $body-textcolor; }
+      }
 
   }
 

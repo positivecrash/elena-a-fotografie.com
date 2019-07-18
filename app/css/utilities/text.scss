@@ -154,6 +154,8 @@ table
 // @include margins(30);
 // @include margins(40);
 
+.m-sec { margin: $margin-sec;  }
+.m-b-sec { margin-bottom: $margin-sec;  }
 .m-b-sec--big { margin-bottom: $margin-sec*2;  }
 .m-t-sec--big { margin-top: $margin-sec*2;  }
 

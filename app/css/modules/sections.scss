@@ -19,6 +19,7 @@ section
 
 .section-specials
   {
+
     h2 { @extend %text_uppercase; }
     i[class*='i-']{
       font-size: 30px;
@@ -37,6 +38,17 @@ section
 
       span{
         white-space: normal;
+      }
+    }
+
+    .d-table--cell{
+      vertical-align: top;
+
+      &:last-child{
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        padding-left: 10px;
+        height: 114px;
       }
     }
   }
