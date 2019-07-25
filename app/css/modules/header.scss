@@ -99,3 +99,34 @@ header[role='banner']
 		top: $margin-sec;
 		right: $padding-fields;
 	}
+
+
+
+.v-2
+{
+	// header[role='banner']
+	// {
+	// 	padding-bottom: 0;
+	// }
+
+	.header-top{
+		padding-bottom: $margin-sec/2;
+	}
+
+	.header-categories{
+		border: 0;
+		// margin-top: $margin-sec;
+	}
+}
+
+.v-3
+{
+	header[role='banner']
+	{
+		padding-bottom: 0;
+	}
+	
+	.header-categories{
+      border: 0;
+    }
+}

@@ -4,7 +4,7 @@
 
   $gray:                      #9D9D9C,
   $gray-light:                #e1e1e1,
-  $gray-lightest:                #f7f7f7,
+  $gray-lightest:             #f7f7f7,
   $blue:                      #22398E,
 
   $body-background:           #ffffff,
@@ -54,6 +54,13 @@
         .d-table--cell:last-child { border-color: $body-textcolor; }
       }
 
+    &.v-3 .header-categories{
+      background-color: darken($body-textcolor, 15%);
+      &, a { color: $body-background; }
+    }
+
   }
+
+  
 
 }
