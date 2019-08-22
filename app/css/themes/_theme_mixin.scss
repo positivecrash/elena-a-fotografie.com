@@ -8,7 +8,7 @@
   $blue:                      #22398E,
 
   $body-background:           #ffffff,
-  $body-textcolor:            #575756,
+  $body-textcolor:            #191a1b,
   $link-textcolor:            $gray
 
 ){
@@ -24,39 +24,12 @@
       }
 
 
-    header[role='banner']
-      {
-        .dropdown-content
-          {
-            background-color: $body-textcolor;
-            &, a { color: $body-background; }
-          }
-
-          nav a.active{
-            color: $body-textcolor;
-          }
+   .header-links--item
+    {
+      &, a {
+        background-color: $body-textcolor;
+        color: $body-background;
       }
-
-    // .header-top { background-color: $gray-lightest; }
-    .header-top a { color: $body-textcolor; }
-    .header-categories { border-color: $gray-light; }
-
-    footer[role='contentinfo']
-      {
-        border-color: $gray-light;
-      }
-
-
-    .grid-item { color: $body-textcolor; }
-
-    .section-specials
-      {
-        .d-table--cell:last-child { border-color: $body-textcolor; }
-      }
-
-    &.v-3 .header-categories{
-      background-color: darken($body-textcolor, 15%);
-      &, a { color: $body-background; }
     }
 
   }

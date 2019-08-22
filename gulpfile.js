@@ -21,6 +21,7 @@ var path = {
         csscompile: 'app/css/compile.scss',
         cssall: 'app/css/**/*.scss',
         jsall: 'app/js/**/*.js',
+        layoutscompile: 'app/layouts/*.pug',
         layoutsall: 'app/layouts/**/*.pug',
         fonticons: 'app/fonticons/*.svg'
     },
@@ -30,7 +31,6 @@ var path = {
         fonts: 'dist/assets/fonts/',
         sass: 'app/css/',
         image: 'dist/assets/i/',
-        sprites: 'app/sprite/',
         js: 'dist/assets/js/',
         layouts: 'dist/',
         csstemplates: 'app/css/templates/'
@@ -45,27 +45,49 @@ var path = {
 }
 
 
+// gulp.task('css', function() {
+// 	return gulp.src([path.file.csscompile])
+// 		.pipe(compass({
+// 			css: path.folder.css,
+// 			sass: path.folder.sass,
+//             image: path.folder.image,
+// 			font: path.folder.fonts
+// 		}))
+// 		.pipe(rename({
+//             basename: path.filename.css
+//         }))
+//         .pipe(gulp.dest(path.folder.css))
+//         .pipe(cleancss({
+//           compatibility: 'ie8'
+//         }))
+// 		.pipe(rename({
+//             basename: path.filename.css,
+//             suffix: '.min'
+//         }))
+// 		.pipe(gulp.dest(path.folder.css));
+// });
+
+
+
 gulp.task('css', function() {
-	return gulp.src([path.file.csscompile])
-		.pipe(compass({
-			css: path.folder.css,
-			sass: path.folder.sass,
+    return gulp.src([path.file.csscompile])
+        .pipe(compass({
+            css: path.folder.css,
+            sass: path.folder.sass,
             image: path.folder.image,
-			font: path.folder.fonts
-		}))
-		.pipe(rename({
-            basename: path.filename.css
+            font: path.folder.fonts
         }))
         .pipe(gulp.dest(path.folder.css))
         .pipe(cleancss({
           compatibility: 'ie8'
         }))
-		.pipe(rename({
+        .pipe(rename({
             basename: path.filename.css,
             suffix: '.min'
         }))
-		.pipe(gulp.dest(path.folder.css));
+        .pipe(gulp.dest(path.folder.css));
 });
+
 
 
 
@@ -79,13 +101,22 @@ gulp.task('js', function() {
 });
 
 
+// gulp.task('layouts', function() {
+//   return gulp.src([path.file.layoutsall])
+//     .pipe(pug({
+//       pretty: true
+//     }))
+//     .pipe(gulp.dest(path.folder.layouts));
+// });
+
 gulp.task('layouts', function() {
-  return gulp.src([path.file.layoutsall])
+  return gulp.src([path.file.layoutscompile])
     .pipe(pug({
       pretty: true
     }))
     .pipe(gulp.dest(path.folder.layouts));
 });
+
 
 
 gulp.task('iconfont', function(){
