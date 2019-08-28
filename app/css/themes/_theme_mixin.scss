@@ -32,6 +32,12 @@
       }
     }
 
+    #header-links{
+      .dropdown-content a.active { background-color: $gray; }
+    }
+
+    #header-nav a { color: $body-textcolor; }
+
   }
 
   

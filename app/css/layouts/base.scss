@@ -9,7 +9,7 @@ body
 
 
 /*====== Set width of container ======*/
-.container-basic { @include secw($mq-desktop); }
+// .container-basic { @include secw($mq-desktop); }
 .container-full {  width: 100%; box-sizing: border-box; }
 .container-padding { @include secw(100%); }
 /*====== end of Set width of container ======*/
@@ -88,14 +88,6 @@ body
       {
         & > .dropdown-content { animation: 0.2s FadeIn 0.4s ease-out forwards; }
       }
-
-
-    &.dropdown-color, &.dropdown-color .inside{
-      padding: 8px 15px;
-      background: darken($c-background, 5%);
-      border: 1px solid $c-violet;
-      border-radius: 4px;
-    }
   }
 
 /*====== end of Navigation ======*/

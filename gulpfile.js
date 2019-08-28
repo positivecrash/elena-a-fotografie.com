@@ -45,30 +45,6 @@ var path = {
 }
 
 
-// gulp.task('css', function() {
-// 	return gulp.src([path.file.csscompile])
-// 		.pipe(compass({
-// 			css: path.folder.css,
-// 			sass: path.folder.sass,
-//             image: path.folder.image,
-// 			font: path.folder.fonts
-// 		}))
-// 		.pipe(rename({
-//             basename: path.filename.css
-//         }))
-//         .pipe(gulp.dest(path.folder.css))
-//         .pipe(cleancss({
-//           compatibility: 'ie8'
-//         }))
-// 		.pipe(rename({
-//             basename: path.filename.css,
-//             suffix: '.min'
-//         }))
-// 		.pipe(gulp.dest(path.folder.css));
-// });
-
-
-
 gulp.task('css', function() {
     return gulp.src([path.file.csscompile])
         .pipe(compass({
@@ -101,14 +77,6 @@ gulp.task('js', function() {
 });
 
 
-// gulp.task('layouts', function() {
-//   return gulp.src([path.file.layoutsall])
-//     .pipe(pug({
-//       pretty: true
-//     }))
-//     .pipe(gulp.dest(path.folder.layouts));
-// });
-
 gulp.task('layouts', function() {
   return gulp.src([path.file.layoutscompile])
     .pipe(pug({
@@ -128,9 +96,6 @@ gulp.task('iconfont', function(){
       fontHeight: 1000,
       prependUnicode: true
      }))
-    // .on('glyphs', function(glyphs, options) {
-    //         console.log(glyphs, options);
-    //   })
     .pipe(gulp.dest(path.folder.fonts));
 });
 

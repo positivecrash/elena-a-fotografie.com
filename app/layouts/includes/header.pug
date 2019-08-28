@@ -5,20 +5,28 @@ header(role='banner')
 			a(href="#")#header-logo: img(alt="", src="assets/i/Anisimova-Logo-g.png")
 
 			#header-links
-				a.header-links--item(href="#")
-					
-				.header-links--item.dropdown
-					a(href="#") DE
-					.dropdown-content.nav-v
-						a(href="#") RU
-						a(href="#").active DE
+				.nav-g--sm
+					div
+						a.header-links--item(href="#", target="_blank"): i.i-facebook.d-block
 
-		section
-			nav.nav-g
-				a(href="#") über Mich
-				a(href="#") Preise
-				a(href="#") Geschenkgutscheine
-				a(href="#") Kontakt
+					div
+						a.header-links--item(href="#", target="_blank"): i.i-instagram.d-block
+
+					.dropdown
+						a.header-links--item.dropdown-toggle(href="#") DE
+						.dropdown-content.nav-v
+							a.header-links--item(href="#") RU
+							a.header-links--item.active(href="#") DE
+
+		section#header-nav.nav-wrapper
+			.nav-inner
+				.nav-content
+					nav.nav-g
+						a(href="#") über Mich
+						a(href="#") Preise
+						a(href="#") Geschenkgutscheine & Sonderangebote
+						a(href="#") Fotoshootings Tipps
+						a(href="#") Kontakt
 
 	//- .header-categories
 	//- 	.container-padding
