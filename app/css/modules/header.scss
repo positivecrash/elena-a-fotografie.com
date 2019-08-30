@@ -110,93 +110,9 @@ header[role='banner']
 	}
 
 
-#header-nav
+#nav-header
 	{
 		text-align: center;
 		@extend %text_uppercase;
 		font-weight: 500;
 	}
-
-
-.nav-wrapper
-	{
-		overflow-y: hidden;
-		height: 80px;
-	}
-
-.nav-inner
-	{
-		overflow-x: scroll;
-		overflow-y: hidden;
-		padding-bottom: 15px;
-    	height: 80px;
-	}
-
-.nav-content
-	{
-		white-space: nowrap;
-	}
-
-
-// .header-categories
-// 	{
-// 		padding: 10px 0;
-
-// 		border-width: 1px 0;
-// 		border-style: solid;
-
-// 		text-align: center;
-
-// 		font-size: $font-size-base - 2;
-
-// 		.container-basic
-// 			{
-// 				white-space: nowrap;
-// 				overflow-x: scroll;
-// 				overflow-y: hidden;
-
-// 				-ms-overflow-style: none;
-// 				scrollbar-width: none;
-// 				&::-webkit-scrollbar { display: none; }
-// 			}
-
-// 	}
-
-
-// #header-lang
-// 	{
-// 		position: absolute;
-// 		top: $margin-sec;
-// 		right: $padding-fields;
-// 	}
-
-
-
-// .v-2
-// {
-// 	// header[role='banner']
-// 	// {
-// 	// 	padding-bottom: 0;
-// 	// }
-
-// 	.header-top{
-// 		padding-bottom: $margin-sec/2;
-// 	}
-
-// 	.header-categories{
-// 		border: 0;
-// 		// margin-top: $margin-sec;
-// 	}
-// }
-
-// .v-3
-// {
-// 	header[role='banner']
-// 	{
-// 		padding-bottom: 0;
-// 	}
-	
-// 	.header-categories{
-//       border: 0;
-//     }
-// }

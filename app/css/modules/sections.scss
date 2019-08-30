@@ -17,38 +17,23 @@ section
   }
 
 
-.section-specials
+
+
+.nav-wrapper
   {
+    overflow-y: hidden;
+    height: 80px;
+  }
 
-    h2 { @extend %text_uppercase; }
-    i[class*='i-']{
-      font-size: 30px;
-      margin-right: 10px;
-    }
+.nav-inner
+  {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+      height: 80px;
+  }
 
-    h2{
-      white-space: nowrap;
-
-      span, i
-        {
-          line-height: 1.2;
-          display: inline-block;
-          vertical-align: middle;
-        }
-
-      span{
-        white-space: normal;
-      }
-    }
-
-    .d-table--cell{
-      vertical-align: top;
-
-      &:last-child{
-        border-width: 0 0 0 1px;
-        border-style: solid;
-        padding-left: 10px;
-        height: 114px;
-      }
-    }
+.nav-content
+  {
+    white-space: nowrap;
   }
