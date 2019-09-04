@@ -1,0 +1,34 @@
+extends extends/layout.pug
+
+block html
+	- var meta_title = 'Gift'
+	- var header = true
+	- var footer = true
+	- var bodyclass = 'theme-light'
+	- var active = "gift"
+
+block content
+
+	section.container-narrow--text.t-align--center
+		section.big
+			h2 Geschenkgutscheine
+			p Bestes Geschenk für Familie und Freunde Bitte melden Sie sich vorab telefonisch für ein Fotoshooting an.
+			section
+				img.i-block(alt="", src="assets/i/Sertificat.jpeg")
+
+		section.big
+			h2 Sonderangebote
+			p Bitte melden Sie sich vorab telefonisch für ein Fotoshooting an. Beispiele für Fotosessions finden Sie im Abschnitt "Vergangenheit".
+
+			section
+				table.container-full.t-align--left
+					tbody
+						tr
+							td 13.05-30.05/2019
+							td Fotografie auf dem Mohnfeld (10 pics)
+							td 100 €
+
+						tr
+							td 13.05-30.05/2019
+							td Fotografie auf dem Mohnfeld (10 pics)
+							td 100 €

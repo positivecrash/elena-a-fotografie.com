@@ -1873,14 +1873,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 40px;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
 }
 
 h1, h2 {
-  margin-top: 40px;
   margin-bottom: 10.5px;
-}
-h1:first-child, h2:first-child {
-  margin-top: 0;
 }
 
 h2 {
@@ -1931,6 +1931,7 @@ a:hover {
 
 li, p {
   margin-bottom: 21px;
+  font-weight: 300;
 }
 li:last-child, p:last-child {
   margin-bottom: 0;
@@ -1978,6 +1979,9 @@ table td, table th {
   border-width: 0 0 0.5px;
   border-style: solid;
   transition: 0.2s ease-in all;
+}
+table tr:last-child td, table tr:last-child th {
+  border-width: 0;
 }
 table th {
   text-align: left;
@@ -2186,8 +2190,8 @@ section {
   position: relative;
   margin-bottom: 40px;
 }
-section section {
-  margin-bottom: 20px;
+section .big {
+  margin-bottom: 80px;
 }
 section:last-child {
   margin-bottom: 0;
