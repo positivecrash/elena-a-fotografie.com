@@ -51,3 +51,23 @@ section
   {
     a { margin-right: 15px; }
   }
+
+
+
+$slider_h: 460px;
+.slider
+  {
+    .nav-wrapper { height: $slider_h; }
+    .nav-inner { height: $slider_h + 20; }
+  }
+
+.slider-item
+  {
+    display: inline-block;
+    height: $slider_h;
+
+    img{
+      display: block;
+      max-height: 100%;
+    }
+  }
