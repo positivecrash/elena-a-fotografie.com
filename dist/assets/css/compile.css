@@ -1840,7 +1840,7 @@ sub {
 body, input:not([type='submit']):not([type='button']), input[type="submit"], input[type="button"], button, *[class*='btn-'] {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   word-spacing: normal;
   letter-spacing: 0;
@@ -1869,13 +1869,13 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
-  margin-bottom: 12px;
+  margin-bottom: 10.5px;
   font-weight: 400;
 }
 
 h1, h2 {
   margin-top: 40px;
-  margin-bottom: 12px;
+  margin-bottom: 10.5px;
 }
 h1:first-child, h2:first-child {
   margin-top: 0;
@@ -1898,23 +1898,23 @@ h1 {
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .t-gt {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .t-lg {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .t-md {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .t-sm {
-  font-size: 13px;
+  font-size: 11px;
 }
 
 /*====== end of Text sizes & Headers ======*/
@@ -1924,7 +1924,7 @@ a:hover {
 }
 
 li, p {
-  margin-bottom: 12px;
+  margin-bottom: 10.5px;
 }
 li:last-child, p:last-child {
   margin-bottom: 0;
@@ -1932,10 +1932,10 @@ li:last-child, p:last-child {
 
 ul, ol {
   margin-left: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 ul ul, ul ol, ol ul, ol ol {
-  margin-top: 24px;
+  margin-top: 21px;
 }
 
 blockquote {
@@ -1953,18 +1953,18 @@ blockquote h2 {
 hr {
   border: 0;
   height: 1px;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 10.5px;
+  margin-bottom: 10.5px;
 }
 hr.hr-lg {
   height: 3px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 table {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 table td, table th {
   padding: 5px 10px;
@@ -1980,7 +1980,7 @@ table th {
 table caption {
   text-align: left;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 10.5px;
 }
 
 /*====== end of Text elements ======*/
@@ -2072,7 +2072,7 @@ table caption {
   }
 }
 input:not([type='submit']):not([type='button']), input[type="submit"], input[type="button"], button, *[class*='btn-'] {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   border-radius: 6px;
   display: inline-block;
@@ -2086,7 +2086,7 @@ input[type="submit"], input[type="button"], button, *[class*='btn-'] {
   -webkit-appearance: none;
   border: 0;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   transition: all 0.2s ease-in-out;
 }
@@ -2191,20 +2191,29 @@ section:last-child {
 
 .nav-wrapper {
   overflow-y: hidden;
-  height: 80px;
+  box-sizing: content-box;
+  height: 21px;
 }
 
 .nav-inner {
   overflow-x: scroll;
   overflow-y: hidden;
-  padding-bottom: 15px;
-  height: 80px;
+  height: 41px;
 }
 
 .nav-content {
   white-space: nowrap;
 }
 
+#nav-categories {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+header[role='banner'] {
+  padding-bottom: 60px;
+}
 header[role='banner'] section {
   padding-top: 40px;
   margin-bottom: 0;
@@ -2290,23 +2299,9 @@ header[role='banner'] section {
 }
 
 footer[role='contentinfo'] {
-  border-width: 1px 0 0;
-  border-style: solid;
   padding: 20px 0;
-  margin-top: 40px;
-}
-footer[role='contentinfo'] p {
-  margin-bottom: 0;
-}
-footer[role='contentinfo'] .nav-g {
-  margin-bottom: 20px;
-}
-footer[role='contentinfo'] .nav-g a {
-  margin-left: 10px;
-  font-size: 22px;
-}
-footer[role='contentinfo'] .nav-g a:first-child {
-  margin-left: 0;
+  font-size: 10px;
+  text-align: center;
 }
 
 #intro-content {
@@ -2342,6 +2337,24 @@ html, body {
 body {
   opacity: 0;
   animation: 0.4s FadeIn ease-in forwards;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main[role='main'] {
+  flex: 1 0 auto;
+}
+
+footer[role='contentinfo'] {
+  flex-shrink: 0;
 }
 
 /*====== Set width of container ======*/
@@ -2397,12 +2410,12 @@ body {
 /*====== Bootstrap ======*/
 @media screen and (max-width: 768px) {
   .row *[class*='col-md'] {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
 }
 @media screen and (max-width: 992px) {
   .row *[class*='col-lg'] {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
 }
 
@@ -2443,6 +2456,12 @@ body {
 .theme-light #nav-header a {
   color: #191a1b;
 }
+.theme-light #nav-categories, .theme-light footer[role='contentinfo'] {
+  background-color: #191a1b;
+}
+.theme-light #nav-categories, .theme-light #nav-categories a, .theme-light footer[role='contentinfo'], .theme-light footer[role='contentinfo'] a {
+  color: #ffffff;
+}
 
 .theme-dark {
   background-color: #2f2f2f;
@@ -2460,4 +2479,10 @@ body {
 }
 .theme-dark #nav-header a {
   color: #f2f2f2;
+}
+.theme-dark #nav-categories, .theme-dark footer[role='contentinfo'] {
+  background-color: #f2f2f2;
+}
+.theme-dark #nav-categories, .theme-dark #nav-categories a, .theme-dark footer[role='contentinfo'], .theme-dark footer[role='contentinfo'] a {
+  color: #2f2f2f;
 }

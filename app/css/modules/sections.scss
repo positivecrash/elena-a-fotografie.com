@@ -22,18 +22,26 @@ section
 .nav-wrapper
   {
     overflow-y: hidden;
-    height: 80px;
+    box-sizing: content-box;
+    height: $font-size-base * 1.5;
   }
 
 .nav-inner
   {
     overflow-x: scroll;
     overflow-y: hidden;
-    padding-bottom: 15px;
-      height: 80px;
+    height: $font-size-base * 1.5 + 20px;
   }
 
 .nav-content
   {
     white-space: nowrap;
+  }
+
+
+#nav-categories
+  {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
