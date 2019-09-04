@@ -1930,7 +1930,7 @@ a:hover {
 }
 
 li, p {
-  margin-bottom: 10.5px;
+  margin-bottom: 21px;
 }
 li:last-child, p:last-child {
   margin-bottom: 0;
@@ -2404,6 +2404,15 @@ main[role='main'] {
 
 .container-narrow {
   max-width: 436px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.container-narrow--text {
+  max-width: 600px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;

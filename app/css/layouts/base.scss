@@ -21,6 +21,7 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
 .container-full {  width: 100%; box-sizing: border-box; }
 .container-padding { @include secw(100%); }
 .container-narrow { @include secw(476px); }
+.container-narrow--text { @include secw(640px); }
 /*====== end of Set width of container ======*/
 
 
