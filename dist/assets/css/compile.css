@@ -2323,6 +2323,16 @@ header[role='banner'] section {
 #nav-header {
   text-align: center;
   font-weight: 500;
+  height: 23px;
+}
+#nav-header .nav-inner {
+  height: 43px;
+}
+#nav-header a {
+  border-width: 0;
+}
+#nav-header a.active {
+  border-width: 0 0 0.5px;
 }
 
 footer[role='contentinfo'] {

@@ -1,3 +1,5 @@
+- var activeClass = 'active'
+
 header(role='banner')
 	.container-padding
 
@@ -22,8 +24,27 @@ header(role='banner')
 			.nav-inner
 				.nav-content
 					nav.nav-g
-						a(href="#") über Mich
-						a(href="#") Preise
-						a(href="#") Geschenkgutscheine & Sonderangebote
-						a(href="#") Fotoshootings Tipps
-						a(href="#") Kontakt
+						if active == "about"
+							a(href="#", class=activeClass) über Mich
+						else
+							a(href="#") über Mich
+						
+						if active == "price"
+							a(href="#", class=activeClass) Preise
+						else
+							a(href="#") Preise
+
+						if active == "gift"
+							a(href="#", class=activeClass) Geschenkgutscheine & Sonderangebote
+						else
+							a(href="#") Geschenkgutscheine & Sonderangebote
+
+						if active == "tips"
+							a(href="#", class=activeClass) Fotoshootings Tipps
+						else
+							a(href="#") Fotoshootings Tipps
+
+						if active == "contact"
+							a(href="#", class=activeClass) Kontakt
+						else
+							a(href="#") Kontakt
