@@ -108,27 +108,22 @@ table
 
 		margin-top: $vertical-rythm;
 		margin-bottom: $vertical-rythm;
+		font-weight: 400;
 
 		td, th {
-			padding: 5px $padding-fields-in;
-			border-width: 0 0 1px;
+			padding: $padding-fields-in;
+			border-width: 0 0 0.5px;
 			border-style: solid;
-			transition: 0.2s ease all;
+			transition: 0.2s ease-in all;
 		}
 
 		th{
-			@extend %text_uppercase;
 			text-align: left;
-			font-weight: 400;
-			border-width: 1px 0;
+			font-weight: 300;
 		}
 
-		caption{
-			text-align: left;
-			padding: 5px $padding-fields-in;
-			@extend %text_uppercase;
-			font-size: $font-size-base * 0.75;
-		}
+		td.subtitle { font-weight: 300; }
+
 	}
 
 // .table-responsive { @include responsiveTable($mq-tablet); }

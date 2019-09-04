@@ -1851,7 +1851,7 @@ a, input[type="submit"], input[type="button"], button, *[class*='btn-'], a:hover
   text-decoration: none !important;
 }
 
-table th, table caption, .t-uppercase, #nav-header {
+.t-uppercase, #nav-header {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1971,22 +1971,20 @@ hr.hr-lg {
 table {
   margin-top: 21px;
   margin-bottom: 21px;
+  font-weight: 400;
 }
 table td, table th {
-  padding: 5px 10px;
-  border-width: 0 0 1px;
+  padding: 10px;
+  border-width: 0 0 0.5px;
   border-style: solid;
-  transition: 0.2s ease all;
+  transition: 0.2s ease-in all;
 }
 table th {
   text-align: left;
-  font-weight: 400;
-  border-width: 1px 0;
+  font-weight: 300;
 }
-table caption {
-  text-align: left;
-  padding: 5px 10px;
-  font-size: 10.5px;
+table td.subtitle {
+  font-weight: 300;
 }
 
 /*====== end of Text elements ======*/
@@ -2506,6 +2504,18 @@ main[role='main'] {
   color: #191a1b;
   border-color: #191a1b;
 }
+.theme-light table tr:hover td {
+  background-color: #f7f7f7;
+}
+.theme-light table tr:hover td.subtitle {
+  background-color: #efefef;
+}
+.theme-light table td, .theme-light table th {
+  border-color: #666666;
+}
+.theme-light table td.subtitle {
+  background-color: #f7f7f7;
+}
 .theme-light .header-links--item, .theme-light .header-links--item a {
   background-color: #191a1b;
   color: #ffffff;
@@ -2530,6 +2540,18 @@ main[role='main'] {
 .theme-dark a {
   color: #f2f2f2;
   border-color: #f2f2f2;
+}
+.theme-dark table tr:hover td {
+  background-color: #272727;
+}
+.theme-dark table tr:hover td.subtitle {
+  background-color: #efefef;
+}
+.theme-dark table td, .theme-dark table th {
+  border-color: #666666;
+}
+.theme-dark table td.subtitle {
+  background-color: #f7f7f7;
 }
 .theme-dark .header-links--item, .theme-dark .header-links--item a {
   background-color: #f2f2f2;
