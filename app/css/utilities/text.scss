@@ -6,6 +6,8 @@ body { @extend %font_base; }
 		line-height: 1.5;
   		margin-bottom: $vertical-rythm/2;
   		font-weight: 400;
+  		text-transform: uppercase;
+  		letter-spacing: 1px;
 	}
 
 #{headings(1,2)}
@@ -43,6 +45,8 @@ h5 { font-size: $font-size-base; }
 
 a{
 	@extend %link_noline;
+	border-width: 0 0 0.5px;
+	border-style: solid;
 
 	&:hover{ opacity: .7; }
 }

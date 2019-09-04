@@ -9,7 +9,7 @@
 
   $body-background:           #ffffff,
   $body-textcolor:            #191a1b,
-  $link-textcolor:            $gray
+  $link-textcolor:            $body-textcolor
 
 ){
 
@@ -21,6 +21,7 @@
     a
       {
         color: $link-textcolor;
+        border-color: $link-textcolor;
       }
 
 
