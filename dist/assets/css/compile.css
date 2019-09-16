@@ -2010,6 +2010,10 @@ table td.subtitle {
 }
 
 /*====== end of Margins & paddings ======*/
+.nowrap {
+  white-space: nowrap;
+}
+
 .t-align--center {
   text-align: center !important;
 }
