@@ -1851,7 +1851,7 @@ a, input[type="submit"], input[type="button"], button, *[class*='btn-'], a:hover
   text-decoration: none !important;
 }
 
-.t-uppercase, #nav-header {
+.t-uppercase, #nav-header, .tabs {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1929,6 +1929,10 @@ a:hover {
   opacity: .7;
 }
 
+b {
+  font-weight: 500;
+}
+
 li, p {
   margin-bottom: 21px;
   font-weight: 300;
@@ -1973,6 +1977,12 @@ table {
   margin-top: 21px;
   margin-bottom: 21px;
   font-weight: 400;
+}
+table:first-child {
+  margin-top: 0;
+}
+table:last-child {
+  margin-bottom: 0;
 }
 table td, table th {
   padding: 10px;
@@ -2504,9 +2514,48 @@ main[role='main'] {
 }
 
 /*====== end of Navigation ======*/
+.page-imagetitle {
+  background-color: #DBD7D8;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+.page-imagetitle img {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Tabs */
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+.tab-content {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  transition: 0.2s all ease;
+}
+
+.tabs {
+  border-width: 0 0 2px;
+  border-style: solid;
+  font-weight: 500;
+}
+
+.tab {
+  display: inline-block;
+  padding: 10.5px 21px;
+  border: 0;
+}
+
 .theme-light {
   background-color: #ffffff;
   color: #191a1b;
+  /* tabs */
 }
 .theme-light a {
   color: #191a1b;
@@ -2540,10 +2589,18 @@ main[role='main'] {
 .theme-light #nav-categories, .theme-light #nav-categories a, .theme-light footer[role='contentinfo'], .theme-light footer[role='contentinfo'] a {
   color: #ffffff;
 }
+.theme-light .tabs {
+  border-color: #191a1b;
+}
+.theme-light .tabs .active {
+  color: #ffffff;
+  background-color: #191a1b;
+}
 
 .theme-dark {
   background-color: #2f2f2f;
   color: #f2f2f2;
+  /* tabs */
 }
 .theme-dark a {
   color: #f2f2f2;
@@ -2576,4 +2633,11 @@ main[role='main'] {
 }
 .theme-dark #nav-categories, .theme-dark #nav-categories a, .theme-dark footer[role='contentinfo'], .theme-dark footer[role='contentinfo'] a {
   color: #2f2f2f;
+}
+.theme-dark .tabs {
+  border-color: #f2f2f2;
+}
+.theme-dark .tabs .active {
+  color: #2f2f2f;
+  background-color: #f2f2f2;
 }

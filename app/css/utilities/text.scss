@@ -52,6 +52,8 @@ a{
 	&:hover{ opacity: .7; }
 }
 
+b { font-weight: 500; }
+
 
 li, p
 	{
@@ -111,6 +113,9 @@ table
 		margin-top: $vertical-rythm;
 		margin-bottom: $vertical-rythm;
 		font-weight: 400;
+
+		&:first-child { margin-top: 0; }
+		&:last-child { margin-bottom: 0; }
 
 		td, th {
 			padding: $padding-fields-in;

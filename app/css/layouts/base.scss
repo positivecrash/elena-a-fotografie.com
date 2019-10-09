@@ -101,3 +101,55 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
   }
 
 /*====== end of Navigation ======*/
+
+
+.page-imagetitle
+  {
+    background-color: #DBD7D8;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+
+    img{
+      display: block;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+
+
+/* Tabs */
+.tab-content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+
+.tab-content {
+  margin-top: $vertical-rythm;
+  margin-bottom: $vertical-rythm;
+
+  transition: 0.2s all ease;
+}
+
+.tabs
+  {
+    border-width: 0 0 2px;
+    border-style: solid;
+    font-weight: 500;
+    @extend %text_uppercase;
+
+  }
+
+.tab {
+  display: inline-block;
+  padding: $vertical-rythm/2 $vertical-rythm;
+  border: 0;
+}
+
+
+

@@ -64,6 +64,17 @@
 
 
 
+
+    /* tabs */
+    .tabs
+      {
+        border-color: $body-textcolor;
+
+        .active{
+          color: $body-background;
+          background-color: $body-textcolor;
+        }
+      }
     
 
   }
