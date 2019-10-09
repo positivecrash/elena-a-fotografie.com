@@ -2630,6 +2630,21 @@ main[role='main'] {
   display: block;
 }
 
+.tips-row {
+  display: table;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.tips-col {
+  display: table-cell;
+  vertical-align: middle;
+}
+.tips-col:first-child {
+  width: 25%;
+  padding-right: 5%;
+}
+
 .theme-light {
   background-color: #ffffff;
   color: #191a1b;

@@ -27,7 +27,7 @@ html(lang='en')
 		if header
 			include ../includes/header.pug
 		
-		if ( header || footer ) & main
+		if header || footer
 			main(role="main")
 				block content
 		else

@@ -243,3 +243,24 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
   }
 
 
+
+
+.tips-row
+  {
+    display: table;
+    width: 100%;
+    margin-bottom: $margin-sec*1.5;
+  }
+
+.tips-col
+  {
+    display: table-cell;
+    vertical-align: middle;
+
+    &:first-child{
+      width: 25%;
+      padding-right: 5%;
+    }
+
+  }
+
