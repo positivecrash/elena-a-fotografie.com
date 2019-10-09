@@ -1,0 +1,36 @@
+extends extends/layout.pug
+
+block html
+	- var meta_title = 'Kontakt'
+	- var header = true
+	- var footer = true
+	- var main = true
+	- var bodyclass = 'theme-light page-kontakt'
+	- var active = "contact"
+
+block content
+
+	.container-padding
+		section#kontakt-cols
+			div
+				p.nowrap join my:
+				#kontakt-socials
+					div: a(href="#", target="_blank"): i.i-facebook.d-block
+					div: a(href="#", target="_blank"): i.i-instagram.d-block
+			div
+				h4 Kontakt:
+				p
+					span.nowrap Email: elena.a.fotografie@gmail.com
+					br/
+					span.nowrap Tel: +43 (660) 458-38-37
+
+			div
+				h4 Address:
+				p
+					span.nowrap 4201 Eidenberg, Höhenweg 22
+					br/
+					span Austria
+
+
+	#kontakt-map
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.674080956919!2d14.245824251608257!3d48.385996779142054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739befcb5eb701%3A0x3c6142a46d5e9ae9!2zSMO2aGVud2VnIDIyLCA0MjAxIEthbW1lcnNjaGxhZywg0JDQstGB0YLRgNC40Y8!5e0!3m2!1sru!2sru!4v1570624799056!5m2!1sru!2sru" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
