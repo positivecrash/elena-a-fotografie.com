@@ -55,7 +55,7 @@
     #nav-header a { color: $body-textcolor; }
 
 
-    #nav-categories, footer[role='contentinfo']
+    #nav-categories
       {
         background-color: $body-textcolor;
         &, a { color: $body-background; }

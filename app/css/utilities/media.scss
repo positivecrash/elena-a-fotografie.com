@@ -17,13 +17,13 @@
 
 
 
-// @mixin tablet 
-// {
-// 	@media screen and (min-width: $mq-mobile) and (max-width: $mq-tablet) 
-// 	{
-// 		@content;
-// 	}
-// }
+@mixin tablet 
+{
+	@media screen and (min-width: $mq-mobile) and (max-width: $mq-tablet) 
+	{
+		@content;
+	}
+}
 
 
 // @mixin minTablet 

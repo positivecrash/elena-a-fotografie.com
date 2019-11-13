@@ -72,7 +72,7 @@ gulp.task('js', function() {
 		.pipe(concat(path.filename.js))
 		.pipe(gulp.dest(path.folder.js))
 		.pipe(rename({ suffix: '.min' }))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(gulp.dest(path.folder.js));
 });
 

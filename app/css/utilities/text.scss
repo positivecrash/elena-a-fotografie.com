@@ -29,7 +29,7 @@ body { @extend %font_base; }
 	}
 
 
-h1 { font-size: $font-size-title; }
+h1 { font-size: $font-size-title; margin-bottom: $vertical-rythm * 2; text-align: center; }
 h5 { font-size: $font-size-base; }
 
 .t-gt { font-size: $font-size-base * 2; }

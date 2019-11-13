@@ -15,6 +15,7 @@ main[role='main'] { flex: 1 0 auto; }
 footer[role='contentinfo'] { flex-shrink: 0; }
 
 main[role='main'] { padding-bottom: $margin-sec * 2; }
+.home main[role='main'], .blog main[role='main'] { padding-bottom: 0; }
 
 /*====== Set width of container ======*/
 // .container-basic { @include secw($mq-desktop); }
@@ -92,6 +93,8 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
         z-index: 10;
         text-align: left;
         padding-top: 10px;
+
+        a { border: 0; }
       }
 
     &:hover
@@ -264,3 +267,7 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
 
   }
 
+
+
+
+.alm-btn-wrap { display: none !important }
