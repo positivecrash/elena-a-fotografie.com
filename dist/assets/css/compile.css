@@ -1851,16 +1851,21 @@ a, input[type="submit"], input[type="button"], button, *[class*='btn-'], a:hover
   text-decoration: none !important;
 }
 
-.t-uppercase, #nav-header, .tabs {
+.t-uppercase, #nav-header, #nav-mobile #nav-mobile_content {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.i-block, #header-logo img {
+.i-block, .header-logo img {
   display: block;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#nav-mobile, #nav-mobile_toggle, .close, .open {
+  visibility: hidden;
+  opacity: 0;
 }
 
 html {
@@ -2068,28 +2073,20 @@ table td.subtitle {
   0% {
     visibility: visible;
     opacity: 1;
-    width: auto;
-    height: auto;
   }
   100% {
     visibility: hidden;
     opacity: 0;
-    width: 0;
-    height: 0;
   }
 }
 @keyframes FadeIn {
   0% {
     visibility: hidden;
     opacity: 0;
-    width: 0;
-    height: 0;
   }
   100% {
     visibility: visible;
     opacity: 1;
-    width: auto;
-    height: auto;
   }
 }
 @keyframes ScaleIn {
@@ -2182,7 +2179,7 @@ input:not([type='submit']):not([type='button']).input-line {
   font-weight: normal;
   font-style: normal;
 }
-.i-location, .i-instagram, .i-facebook {
+.i-location, .i-menu, .i-instagram, .i-facebook, .i-close {
   font-family: 'iconfont';
   speak: none;
   font-size: 100%;
@@ -2199,12 +2196,20 @@ input:not([type='submit']):not([type='button']).input-line {
   content: "";
 }
 
+.i-menu:before {
+  content: "";
+}
+
 .i-instagram:before {
   content: "";
 }
 
 .i-facebook:before {
   content: "";
+}
+
+.i-close:before {
+  content: "";
 }
 
 section {
@@ -2302,7 +2307,7 @@ header[role='banner'] section {
   position: relative;
 }
 
-#header-logo {
+.header-logo {
   display: block;
   max-width: 250px;
   margin: 0 auto;
@@ -2353,6 +2358,10 @@ header[role='banner'] section {
   text-transform: uppercase;
 }
 
+nav nav {
+  font-weight: 300;
+}
+
 *[class*='nav-g'] > * {
   display: inline-block;
   vertical-align: middle;
@@ -2392,8 +2401,51 @@ header[role='banner'] section {
 }
 #nav-header .dropdown-content {
   padding: 20px 10px;
+  animation-duration: 0;
 }
 
+#nav-mobile {
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+#nav-mobile #nav-mobile_content {
+  max-width: 300px;
+  margin: 40px auto;
+  position: relative;
+  padding-top: 20px;
+  font-weight: 500;
+}
+#nav-mobile #nav-mobile_content nav a {
+  padding-bottom: 6px;
+}
+#nav-mobile #nav-mobile_content nav a:last-child {
+  border-width: 0;
+}
+#nav-mobile #nav-mobile_content .i-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0;
+}
+#nav-mobile a.dropdown-toggle {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  #nav-mobile_toggle {
+    animation: 0.2s FadeIn ease-in forwards;
+  }
+
+  #nav-header {
+    display: none;
+  }
+}
 footer[role='contentinfo'] {
   padding: 20px 0;
   font-size: 12px;
@@ -2551,6 +2603,10 @@ main[role='main'] {
 }
 
 /*====== Flow elements ======*/
+.open {
+  animation: 0.4s 0.2s FadeIn ease-in forwards;
+}
+
 /*====== Bootstrap ======*/
 @media screen and (max-width: 768px) {
   .row *[class*='col-md'] {
@@ -2613,31 +2669,6 @@ main[role='main'] {
 }
 
 /* Tabs */
-.tab-content {
-  display: none;
-}
-.tab-content.active {
-  display: block;
-}
-
-.tab-content {
-  margin-top: 21px;
-  margin-bottom: 21px;
-  transition: 0.2s all ease;
-}
-
-.tabs {
-  border-width: 0 0 2px;
-  border-style: solid;
-  font-weight: 500;
-}
-
-.tab {
-  display: inline-block;
-  padding: 10.5px 21px;
-  border: 0;
-}
-
 #kontakt-cols {
   display: table;
   margin-left: auto;
@@ -2766,6 +2797,9 @@ main[role='main'] {
 .theme-light #nav-header .dropdown-content, .theme-light #nav-header .dropdown-content a, .theme-light #nav-header a.dropdown-toggle, .theme-light #nav-header a.dropdown-toggle a {
   color: #ffffff;
 }
+.theme-light #nav-mobile {
+  background-color: #ffffff;
+}
 .theme-light #nav-categories {
   background-color: #191a1b;
 }
@@ -2820,6 +2854,9 @@ main[role='main'] {
 }
 .theme-dark #nav-header .dropdown-content, .theme-dark #nav-header .dropdown-content a, .theme-dark #nav-header a.dropdown-toggle, .theme-dark #nav-header a.dropdown-toggle a {
   color: #2f2f2f;
+}
+.theme-dark #nav-mobile {
+  background-color: #2f2f2f;
 }
 .theme-dark #nav-categories {
   background-color: #f2f2f2;

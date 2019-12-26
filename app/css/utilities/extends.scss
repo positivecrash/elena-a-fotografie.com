@@ -40,40 +40,15 @@
 }
 
 
-// %flex_center{
-//   display: flex;
-//   text-align: center;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// %flex_columns{
-// 	display: flex;
-// 	flex-grow: 1;
-// }
-
-
-
 %hidden
 	{
 		visibility: hidden;
 		opacity: 0;
-		width: 0;
- 	 	height: 0;
 	}
 
 %visible
 	{
 		visibility: visible;
   		opacity: 1;
-  		width: auto;
-  		height: auto;
 	}
-
-// %position_sticky__top{
-// 	position: sticky;
-//     position: -webkit-sticky;
-//     top: 0;
-//     z-index: 100;
-// }
 

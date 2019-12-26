@@ -50,6 +50,10 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
 /*====== Flow elements ======*/
 
 
+.close { @extend %hidden; }
+.open { @extend %hidden; animation: 0.4s 0.2s FadeIn ease-in forwards; }
+
+
 /*====== Bootstrap ======*/
 
 .row
@@ -143,36 +147,36 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
 
 
 /* Tabs */
-.tab-content {
-  display: none;
+// .tab-content {
+//   display: none;
 
-  &.active {
-    display: block;
-  }
-}
+//   &.active {
+//     display: block;
+//   }
+// }
 
 
-.tab-content {
-  margin-top: $vertical-rythm;
-  margin-bottom: $vertical-rythm;
+// .tab-content {
+//   margin-top: $vertical-rythm;
+//   margin-bottom: $vertical-rythm;
 
-  transition: 0.2s all ease;
-}
+//   transition: 0.2s all ease;
+// }
 
-.tabs
-  {
-    border-width: 0 0 2px;
-    border-style: solid;
-    font-weight: 500;
-    @extend %text_uppercase;
+// .tabs
+//   {
+//     border-width: 0 0 2px;
+//     border-style: solid;
+//     font-weight: 500;
+//     @extend %text_uppercase;
 
-  }
+//   }
 
-.tab {
-  display: inline-block;
-  padding: $vertical-rythm/2 $vertical-rythm;
-  border: 0;
-}
+// .tab {
+//   display: inline-block;
+//   padding: $vertical-rythm/2 $vertical-rythm;
+//   border: 0;
+// }
 
 
 

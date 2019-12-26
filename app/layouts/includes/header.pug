@@ -1,13 +1,63 @@
 - var activeClass = 'active'
 
+
+#nav-mobile
+	#nav-mobile_content
+
+		nav.nav-v
+			a(href="#") Portfolio
+
+			nav.nav-v
+				a(href="#") Alle Fotos
+				a(href="#") Familienporträt
+				a(href="#") Kinder
+				a(href="#") Porträt
+				a(href="#") Sport
+				a(href="#") Berichte
+				a(href="#") Hochzeiten
+				a(href="#") Lovestory
+				a(href="#") Berufsportät
+				a(href="#") Objektfotografie
+
+
+			if active == "about"
+				a(href="#", class=activeClass) über Mich
+			else
+				a(href="#") über Mich
+			
+			if active == "price"
+				a(href="#", class=activeClass) Preise
+			else
+				a(href="#") Preise
+
+			if active == "gift"
+				a(href="#", class=activeClass) Geschenkgutscheine & Sonderangebote
+			else
+				a(href="#") Geschenkgutscheine & Sonderangebote
+
+			if active == "tips"
+				a(href="#", class=activeClass) Fotoshootings Tipps
+			else
+				a(href="#") Fotoshootings Tipps
+
+			if active == "contact"
+				a(href="#", class=activeClass) Kontakt
+			else
+				a(href="#") Kontakt
+
+		a.i-close#nav-mobile--close(href="#")
+
 header(role='banner')
 	.container-padding
 
 		section
-			a(href="#")#header-logo: img(alt="", src="assets/i/Anisimova-Logo-g.png")
+			a(href="#").header-logo: img(alt="", src="assets/i/Anisimova-Logo-g.png")
 
 			#header-links
 				.nav-g--sm
+					div
+						a.header-links--item#nav-mobile_toggle(href="#"): i.i-menu.d-block
+
 					div
 						a.header-links--item(href="#", target="_blank"): i.i-facebook.d-block
 
