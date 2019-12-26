@@ -125,5 +125,14 @@ header[role='banner']
 		.nav-inner { height: $font-size-base * 1.5 + 2px + 20px; }
 
 		a { border-width: 0; }
-		a.active { border-width: 0 0 0.5px; }
+		a.current-menu-item { border-width: 0 0 0.5px; }
+	}
+
+
+#nav-categories
+	{
+		a.active{
+			border: 0;
+			opacity: .5;
+		}
 	}

@@ -1964,6 +1964,7 @@ blockquote h2 {
 }
 
 hr {
+  background-color: #DBD7D8;
   border: 0;
   height: 1px;
   margin-top: 10.5px;
@@ -2005,6 +2006,26 @@ table td.subtitle {
 
 /*====== end of Text elements ======*/
 /*====== Margins & paddings ======*/
+.m-0 {
+  margin: 0px !important;
+}
+
+.m-t-0 {
+  margin-top: 0px !important;
+}
+
+.m-r-0 {
+  margin-right: 0px !important;
+}
+
+.m-b-0 {
+  margin-bottom: 0px !important;
+}
+
+.m-l-0 {
+  margin-left: 0px !important;
+}
+
 .m-sec {
   margin: 40px;
 }
@@ -2156,12 +2177,12 @@ input:not([type='submit']):not([type='button']).input-line {
 /* Icons */
 @font-face {
   font-family: 'iconfont';
-  src: url("../fonts/iconfont.eot");
-  src: url("../fonts/iconfont.eot") format("embedded-opentype"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.woff") format("woff");
+  src: url("../fonts/iconfont.eot?2");
+  src: url("../fonts/iconfont.eot?2") format("embedded-opentype"), url("../fonts/iconfont.ttf?2") format("truetype"), url("../fonts/iconfont.woff?2") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-.i-day, .i-night, .i-instagram, .i-facebook, .i-gift, .i-special, .i-look {
+.i-location, .i-instagram, .i-facebook {
   font-family: 'iconfont';
   speak: none;
   font-size: 100%;
@@ -2174,12 +2195,8 @@ input:not([type='submit']):not([type='button']).input-line {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.i-day:before {
+.i-location:before {
   content: "";
-}
-
-.i-night:before {
-  content: "";
 }
 
 .i-instagram:before {
@@ -2190,23 +2207,11 @@ input:not([type='submit']):not([type='button']).input-line {
   content: "";
 }
 
-.i-gift:before {
-  content: "";
-}
-
-.i-special:before {
-  content: "";
-}
-
-.i-look:before {
-  content: "";
-}
-
 section {
   position: relative;
   margin-bottom: 40px;
 }
-section .big {
+section.big, section .big {
   margin-bottom: 80px;
 }
 section:last-child {
@@ -2245,14 +2250,47 @@ section:last-child {
 .slider .nav-inner {
   height: 480px;
 }
-
-.slider-item {
+.slider .slider-item {
   display: inline-block;
   height: 460px;
 }
-.slider-item img {
+.slider .slider-item img {
   display: block;
   max-height: 100%;
+}
+
+.slider-mid .nav-wrapper {
+  height: 360px;
+}
+.slider-mid .nav-inner {
+  height: 380px;
+}
+.slider-mid .slider-item {
+  display: inline-block;
+  height: 360px;
+}
+.slider-mid .slider-item img {
+  display: block;
+  max-height: 100%;
+}
+
+.image-attached {
+  margin: 0 auto;
+  border: 0;
+  display: block;
+  text-align: center;
+}
+
+.image-location {
+  font-size: 16px;
+  text-align: center;
+}
+.image-location span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.image-location .i-location {
+  margin-right: 10px;
 }
 
 header[role='banner'] {
@@ -2350,8 +2388,13 @@ header[role='banner'] section {
 #nav-header a {
   border-width: 0;
 }
-#nav-header a.active {
+#nav-header a.current-menu-item {
   border-width: 0 0 0.5px;
+}
+
+#nav-categories a.active {
+  border: 0;
+  opacity: .5;
 }
 
 footer[role='contentinfo'] {
@@ -2548,14 +2591,28 @@ main[role='main'] {
 /*====== end of Navigation ======*/
 .page-imagetitle {
   background-color: #DBD7D8;
-  height: 50vh;
+  height: 40vh;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
-.page-imagetitle img {
-  display: block;
-  height: 100%;
-  margin: 0 auto;
+.page-imagetitle .page-imagetitle_i {
+  display: inline-block;
+  max-height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.page-imagetitle .page-imagetitle_b {
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 /* Tabs */
@@ -2617,12 +2674,6 @@ main[role='main'] {
 #kontakt-socials {
   font-size: 24px;
   display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  #kontakt-socials {
-    width: auto;
-  }
 }
 #kontakt-socials div {
   display: table-cell;
@@ -2677,8 +2728,8 @@ main[role='main'] {
   padding-right: 5%;
 }
 
-.alm-btn-wrap {
-  display: none !important;
+.slider {
+  text-align: center;
 }
 
 .theme-light {

@@ -94,7 +94,7 @@ blockquote
 	}
 
 hr{
-	// background-color: lighten($c-background, 60%);
+	background-color: #DBD7D8;
 	border: 0;
 	height: 1px;
 	margin-top: $vertical-rythm/2;
@@ -152,7 +152,7 @@ table
 
 /*====== Margins & paddings ======*/
 
-// @include margins(0);
+@include margins(0);
 // @include margins(5);
 // @include margins(10);
 // @include margins(15);
