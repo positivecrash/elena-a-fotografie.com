@@ -2468,6 +2468,11 @@ footer[role='contentinfo'] {
     column-count: 3;
   }
 }
+@media screen and (min-width: 2000px) {
+  .grid {
+    column-count: 6;
+  }
+}
 
 .grid-item {
   width: 100% !important;
