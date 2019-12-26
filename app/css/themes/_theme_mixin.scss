@@ -52,7 +52,17 @@
       .dropdown-content a.active { background-color: $gray; }
     }
 
-    #nav-header a { color: $body-textcolor; }
+    #nav-header{
+      a { color: $body-textcolor; }
+
+
+      .dropdown-content, a.dropdown-toggle {
+        background-color: $body-textcolor;
+
+        &, a { color: $body-background; }
+      }
+      
+    }
 
 
     #nav-categories
@@ -60,6 +70,8 @@
         background-color: $body-textcolor;
         &, a { color: $body-background; }
       }
+
+
 
 
 

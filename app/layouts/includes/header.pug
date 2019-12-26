@@ -20,31 +20,45 @@ header(role='banner')
 							a.header-links--item(href="#") RU
 							a.header-links--item.active(href="#") DE
 
-		section#nav-header.nav-wrapper
-			.nav-inner
-				.nav-content
-					nav.nav-g
-						if active == "about"
-							a(href="#", class=activeClass) über Mich
-						else
-							a(href="#") über Mich
-						
-						if active == "price"
-							a(href="#", class=activeClass) Preise
-						else
-							a(href="#") Preise
+		section#nav-header
+			nav.nav-g
 
-						if active == "gift"
-							a(href="#", class=activeClass) Geschenkgutscheine & Sonderangebote
-						else
-							a(href="#") Geschenkgutscheine & Sonderangebote
+				.dropdown
+					a.dropdown-toggle(href="#") Portfolio
+					nav.nav-v.dropdown-content
+						a(href="#") Alle Fotos
+						a(href="#") Familienporträt
+						a(href="#") Kinder
+						a(href="#") Porträt
+						a(href="#") Sport
+						a(href="#") Berichte
+						a(href="#") Hochzeiten
+						a(href="#") Lovestory
+						a(href="#") Berufsportät
+						a(href="#") Objektfotografie
 
-						if active == "tips"
-							a(href="#", class=activeClass) Fotoshootings Tipps
-						else
-							a(href="#") Fotoshootings Tipps
 
-						if active == "contact"
-							a(href="#", class=activeClass) Kontakt
-						else
-							a(href="#") Kontakt
+				if active == "about"
+					a(href="#", class=activeClass) über Mich
+				else
+					a(href="#") über Mich
+				
+				if active == "price"
+					a(href="#", class=activeClass) Preise
+				else
+					a(href="#") Preise
+
+				if active == "gift"
+					a(href="#", class=activeClass) Geschenkgutscheine & Sonderangebote
+				else
+					a(href="#") Geschenkgutscheine & Sonderangebote
+
+				if active == "tips"
+					a(href="#", class=activeClass) Fotoshootings Tipps
+				else
+					a(href="#") Fotoshootings Tipps
+
+				if active == "contact"
+					a(href="#", class=activeClass) Kontakt
+				else
+					a(href="#") Kontakt

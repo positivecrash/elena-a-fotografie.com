@@ -102,7 +102,6 @@ header[role='banner']
 
 .nav-v
 	{
-		// @extend %text_uppercase;
 
 		& > *
 			{
@@ -120,19 +119,27 @@ header[role='banner']
 		@extend %text_uppercase;
 		font-weight: 500;
 
-		height: $font-size-base * 1.5 + 2px;
-
-		.nav-inner { height: $font-size-base * 1.5 + 2px + 20px; }
+		// height: $font-size-base * 1.5 + 2px;
+		// .nav-inner { height: $font-size-base * 1.5 + 2px + 20px; }
 
 		a { border-width: 0; }
 		a.current-menu-item { border-width: 0 0 0.5px; }
-	}
 
+		a.dropdown-toggle{
+			// border-width: 0 0 0.5px;
+			padding: 6px 10px;
+		}
 
-#nav-categories
-	{
-		a.active{
-			border: 0;
-			opacity: .5;
+		.dropdown-content{
+			padding: 20px 10px;
 		}
 	}
+
+
+// #nav-categories
+// 	{
+// 		a.active{
+// 			border: 0;
+// 			opacity: .5;
+// 		}
+// 	}
