@@ -32,3 +32,5 @@
 .i-instagram { @include icon('\EA03'); }
 .i-facebook { @include icon('\EA04'); }
 .i-close { @include icon('\EA05'); }
+.i-arrow_right { @include icon('\EA06'); }
+.i-arrow_left { @include icon('\EA06'); transform: rotate(180deg); display: block; }

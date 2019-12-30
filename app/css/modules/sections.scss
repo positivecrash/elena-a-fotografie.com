@@ -52,30 +52,58 @@ section
 
 
 
-$slider_h: 460px;
+// $slider_h: 460px;
 
-@mixin slider($height){
+// @mixin slider($height){
 
-  .nav-wrapper { height: $height; }
-  .nav-inner { height: $height + 20; }
+//   .nav-wrapper { height: $height; }
+//   .nav-inner { height: $height + 20; }
 
-  .slider-item
-  {
-    display: inline-block;
-    height: $height;
+//   .slider-item
+//   {
+//     display: inline-block;
+//     height: $height;
 
-    img{
-      display: block;
-      max-height: 100%;
-    }
+//     img{
+//       display: block;
+//       max-height: 100%;
+//     }
+//   }
+
+// }
+
+
+// .slider { @include slider(460px); }
+// .slider-mid { @include slider(360px); }
+
+
+.slick-slider{
+  height: 460px;
+
+  position: relative;
+
+  .slick-track, .slick-list, img{
+    height: 100% !important;
   }
 
+  .slick-arrow{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+
+    color: #fff;
+    cursor: pointer;
+    font-size: 160%;
+  }
+
+  .slick-prev{
+    left: 10px;
+  }
+
+  .slick-next{
+    right: 10px;
+  }
 }
-
-
-.slider { @include slider(460px); }
-.slider-mid { @include slider(360px); }
-
 
 
 
