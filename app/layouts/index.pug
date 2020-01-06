@@ -7,6 +7,18 @@ block html
 	- var bodyclass = 'theme-light blog'
 
 block content
+	
+	script(src='https://code.jquery.com/jquery-1.12.4.min.js', integrity='sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ', crossorigin='anonymous')
+	script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
+
+	script.
+		$(document).ready(function(){
+			$('.grid').masonry({
+				itemSelector: '.grid-item'
+			});
+		});
+	
+
 	.grid
 		a(href="#").grid-item
 			img(alt="", src="assets/i/tmp/Story-1.jpg")

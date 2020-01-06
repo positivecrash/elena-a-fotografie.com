@@ -1,43 +1,24 @@
-.grid
-  {
-
-   /* Prevent vertical gaps */
-   line-height: 0;
-   
-   column-count: 4;
-   column-gap: 0px;
-
-   @include mobile(){
-    column-count: 2;
-   }
-
-   @include tablet(){
-    column-count: 3;
-   }
-
-   @media screen and (min-width: 2000px)
-    {
-      column-count: 6;
-    }
-
-  }
-
 .grid-item
   {
-    // /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
-
     position: relative;
-    overflow: hidden;
-    display: block;
-
+    width: 25%;
     border: 0;
+    overflow: hidden;
+
+    @include mobile(){
+      width: 50%;
+    }
+
+    @media screen and (min-width: 2000px)
+    {
+      width: 20%;
+    }
+
 
     img{
       display: block;
-      width: 100%;
-      height: auto;
+      max-width: 100%;
+      transition: .6s linear all;
     }
 
     span
@@ -55,21 +36,85 @@
         column-count: 1;
         line-height: 1.2;
       }
-  }
 
-
-a.grid-item
-  {
-    img
-      {
-        // transform: scale(1);
-        transition: .6s linear all;
+      &:hover{
+        opacity: 1;
+        img { transform: scale(1.1); }
       }
-
-    &:hover{
-      opacity: 1;
-
-      // img { transform: scale(1.1); }
-      img { transform: scale(1.1); }
-    }
   }
+
+// .grid
+//   {
+
+//    /* Prevent vertical gaps */
+//    line-height: 0;
+   
+//    column-count: 4;
+//    column-gap: 0px;
+
+//    @include mobile(){
+//     column-count: 2;
+//    }
+
+//    @include tablet(){
+//     column-count: 3;
+//    }
+
+//    @media screen and (min-width: 2000px)
+//     {
+//       column-count: 6;
+//     }
+
+//   }
+
+// .grid-item
+//   {
+//     // /* Just in case there are inline attributes */
+//     width: 100% !important;
+//     height: auto !important;
+
+//     position: relative;
+//     overflow: hidden;
+//     display: block;
+
+//     border: 0;
+
+//     img{
+//       display: block;
+//       width: 100%;
+//       height: auto;
+//     }
+
+//     span
+//       {
+        
+//         color: #fff;
+        
+//         position: absolute;
+//         left: 10px;
+//         bottom: 10px;
+//         right: 10px;
+//         z-index: 1;
+
+//         display: block;
+//         column-count: 1;
+//         line-height: 1.2;
+//       }
+//   }
+
+
+// a.grid-item
+//   {
+//     img
+//       {
+//         // transform: scale(1);
+//         transition: .6s linear all;
+//       }
+
+//     &:hover{
+//       opacity: 1;
+
+//       // img { transform: scale(1.1); }
+//       img { transform: scale(1.1); }
+//     }
+//   }
