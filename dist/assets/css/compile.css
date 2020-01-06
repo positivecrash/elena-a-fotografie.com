@@ -2261,28 +2261,32 @@ section:last-child {
   margin-right: 15px;
 }
 
-.slick-slider {
+.js-slider {
   height: 460px;
-  position: relative;
 }
-.slick-slider a.slick-slide {
+.js-slider a {
   border: 0;
 }
-.slick-slider .slick-track, .slick-slider .slick-list, .slick-slider img {
+.js-slider .tns-item, .js-slider img {
   height: 100% !important;
 }
-.slick-slider .slick-arrow {
+
+.tns-inner {
+  text-align: center;
+}
+
+.tns-controls [data-controls] {
   position: absolute;
   z-index: 100;
   top: 50%;
   color: #fff;
   cursor: pointer;
-  font-size: 160%;
+  font-size: 240%;
 }
-.slick-slider .slick-prev {
+.tns-controls [data-controls="prev"] {
   left: 10px;
 }
-.slick-slider .slick-next {
+.tns-controls [data-controls="next"] {
   right: 10px;
 }
 
@@ -2589,7 +2593,7 @@ footer[role='contentinfo'] {
 }
 @media screen and (min-width: 2000px) {
   .grid-item {
-    width: 20%;
+    width: 16.66667%;
   }
 }
 .grid-item img {
