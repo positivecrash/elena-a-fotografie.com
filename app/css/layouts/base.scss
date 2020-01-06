@@ -110,39 +110,7 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
 /*====== end of Navigation ======*/
 
 
-.page-imagetitle
-  {
-    background-color: #DBD7D8;
-    height: 40vh;
-    position: relative;
-    overflow: hidden;
 
-    // padding-top: 1vh;
-    // padding-bottom: 1vh;
-    text-align: center;
-
-    .page-imagetitle_i{
-      display: inline-block;
-      max-height: 100%;
-
-      position: relative;
-      z-index: 1;
-    }
-
-    .page-imagetitle_b{
-      background-size: cover;
-      background-position: 50% 50%;
-      -webkit-filter:blur(20px);
-      filter: blur(20px);
-
-      position: absolute;
-      top: 0;
-      left:0;
-      right: 0;
-      bottom: 0;
-      z-index: 0;
-    }
-  }
 
 
 
@@ -182,114 +150,7 @@ main[role='main'] { padding-bottom: $margin-sec * 2; }
 
 
 
-#kontakt-cols
-  {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-
-    & > div{
-      display: table-cell;
-      vertical-align: baseline;
-      padding: 0 $vertical-rythm;
-
-      @include mobile(){
-        display: block;
-        padding: 0 0 $vertical-rythm;
-      }
-
-      &:last-child { padding-right: 0; }
-
-
-      &:first-child{
-        padding-left: 0;
-        // text-align: right;
-        
-        p {
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          font-size: 30px;
-          line-height: 1;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-
-
-  #kontakt-socials
-    {
-      font-size: 24px;
-      display: table;
-      // width: 100%;
-
-      // @include mobile(){
-      //   width: auto;
-      // }
-
-      div{
-        display: table-cell;
-        padding-right: $vertical-rythm;
-
-        &:last-child{
-          padding-right: 0;
-        }
-      }
-
-      a{
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-
-        width: 48px;
-        height: 48px;
-        
-      }
-    }
-
-
-.page-kontakt main { padding-bottom: 450px + $margin-sec; position: relative; }
-
-#kontakt-map
-  {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    transition: 0.2 ease all;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    &:hover{
-      -webkit-filter: grayscale(0);
-      filter: grayscale(0);
-    }
-
-    iframe { width: 100%; display: block; }
-  }
 
 
 
-
-.tips-row
-  {
-    display: table;
-    width: 100%;
-    margin-bottom: $margin-sec*1.5;
-  }
-
-.tips-col
-  {
-    display: table-cell;
-    vertical-align: middle;
-
-    &:first-child{
-      width: 25%;
-      padding-right: 5%;
-    }
-
-  }
-
-
-.slider { text-align: center; }
+// .slider { text-align: center; }
