@@ -2263,6 +2263,7 @@ section:last-child {
 
 .js-slider {
   height: 460px;
+  overflow: hidden;
 }
 .js-slider a {
   border: 0;

@@ -111,6 +111,7 @@ section
 
 .js-slider{
   height: 460px;
+  overflow: hidden;
 
   a { border: 0; }
   .tns-item, img{ height: 100% !important; }
